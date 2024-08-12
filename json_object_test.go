@@ -12,6 +12,7 @@ type Customer struct {
 	LastName   string
 	Age        int
 	Married    bool
+	Hobbies    []string
 }
 
 func TestJSONObject(t *testing.T) {
@@ -21,6 +22,7 @@ func TestJSONObject(t *testing.T) {
 		LastName:   "Faizin",
 		Age:        18,
 		Married:    false,
+		Hobbies:    []string{"Gaming", "Reading", "Coding"},
 	}
 	bytes, _ := json.Marshal(customer)
 	fmt.Println(string(bytes))
