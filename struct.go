@@ -15,3 +15,9 @@ type Customer struct {
 	Hobbies    []string
 	Address    []Address
 }
+
+type Product struct {
+	Id       string
+	Name     string
+	ImageURL string
+}
