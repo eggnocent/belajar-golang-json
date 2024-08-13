@@ -17,7 +17,7 @@ type Customer struct {
 }
 
 type Product struct {
-	Id       string
-	Name     string
-	ImageURL string
+	Id       string `json:"id"`
+	Name     string `json:"name"`
+	ImageURL string `json:"image_url"`
 }
