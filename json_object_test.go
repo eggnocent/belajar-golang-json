@@ -6,15 +6,6 @@ import (
 	"testing"
 )
 
-type Customer struct {
-	FirstName  string
-	MiddleName string
-	LastName   string
-	Age        int
-	Married    bool
-	Hobbies    []string
-}
-
 func TestJSONObject(t *testing.T) {
 	customer := Customer{
 		FirstName:  "Arya",
